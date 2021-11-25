@@ -1,19 +1,20 @@
 package main;
 
-import estrutura.Fila;
+import estrutura.Pilha;
 
 public class Principal {
 	
 	public static void main (String [] args) {
-		Fila fila = new Fila ();
+		Pilha pilha = new Pilha ();
 		
-		fila.inserir(1);
-		fila.inserir(2);
-		fila.inserir(3);
-		fila.inserir(4);
-		fila.mostrar();
-		fila.inverter();
-		fila.mostrar();
+		pilha.empilhar (1);
+		pilha.empilhar (2);
+		pilha.empilhar (3);
+		pilha.empilhar (4);
+		pilha.mostrar();
+		
+		pilha.desempilhar();
+		pilha.mostrar();
 	}
 
 }
